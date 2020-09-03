@@ -10,25 +10,19 @@ export default function Home(){
     return(
         <>
         <GlobalHome/>
-            
             <h1>Welcome to our quizzes</h1>
             <Wrapper>
-            
             <Card>
-            
             <img src={Easy} alt=""/>
-            
             <Link className="link" to ="/easy"><button>Easy</button></Link></Card>
-            
             <Card>
-                <img src={Medium} alt=""/>
+            <img src={Medium} alt=""/>
             <Link to ="/medium"><button>Medium Level</button></Link>
             </Card>
             <Card>
             <img src={Hard} alt=""/>
             <Link to ="/hard"><button>Hard Level</button></Link>
             </Card>
-
             </Wrapper>
         </>
     )
