@@ -8,7 +8,7 @@ html {
     background-image: url(${Homebanner});
     background-size: cover;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 20px ;
     
   }
   * {
@@ -27,15 +27,14 @@ html {
     -moz-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #4287f5);
     font-size: 80px;
-    text-align: center;
+    text-align: left;
     margin: 20px; 
    } 
 }
 `
 export const Wrapper = styled.div`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(250px, 20fr));
-grid-gap: 30px;
+display: flex;
+flex-direction:column;
 align-items: center;
 justify-content: center;
 padding:50px 10px 50px 50px;
@@ -48,17 +47,21 @@ padding:50px 10px 50px 50px;
     height: 40px;
     margin: 20px 0;
     padding: 0 40px;
-    text-align:center;
+    text-align:left;
+    
   }
   link{
       text-decoration:none;
+      color:#fff;
+  }
+  h3{
+      color:#fff;
   }
   `
 export const Card = styled.div`
   max-width:300px;
   align-items:center;
   justify-content:center;
-  background-color:#fff;
   img{
       height:200px;
   }

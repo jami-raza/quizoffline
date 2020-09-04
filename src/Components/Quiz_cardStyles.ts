@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   text-align: center;
   p {
     font-size: 1rem;
+    color:black;
   }
 `;
 

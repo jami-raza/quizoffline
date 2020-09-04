@@ -24,10 +24,13 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   > p {
-    color: #fff;
+    color: black;
+  }
+  link{
+      text-decoration:none;
   }
   .score {
-    color: #fff;
+    color: black;
     font-size: 2rem;
     margin: 0;
   }

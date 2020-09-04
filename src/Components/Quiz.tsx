@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 // Components 
 import QuizCard from './QuizCard';
 // Types
@@ -68,12 +69,23 @@ function Quiz(props:QuizInfoType) {
       <>
     <GlobalStyle/>
     <Wrapper>
-        <h1>Quiz Academy</h1>
+        
+        
         {gameOver || useranswer.length === Total_question ? (
           <button className='start' onClick={Startquiz}>
             Start {props.level}
           </button>
-        ) : null}
+          
+        ) : null },
+        {gameOver || useranswer.length === Total_question ? (
+        
+                <Link className="Link" to="/"><button className='start'>Back to home</button></Link>
+                
+        
+        ) : null },
+        
+        
+
         
         {!gameOver ? <p className='score'>Score:{score}</p>:null}
         {loading ? <p>Loading Questions...</p>:null}
