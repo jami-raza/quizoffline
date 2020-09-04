@@ -5,8 +5,6 @@ html {
     height: 100%;
   }
   body {
-    background-image: url(${Homebanner});
-    background-size: cover;
     margin: 0;
     padding: 0 20px ;
     
