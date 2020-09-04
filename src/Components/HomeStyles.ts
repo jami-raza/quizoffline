@@ -1,5 +1,4 @@
 import styled,{createGlobalStyle} from 'styled-components'
-import Homebanner from '../images/Homebanner.jpg'
 export const GlobalHome = createGlobalStyle`
 html {
     height: 100%;

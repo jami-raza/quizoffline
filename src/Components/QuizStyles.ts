@@ -1,5 +1,4 @@
 import styled,{createGlobalStyle} from 'styled-components'
-import quizbanner from '../images/quizbanner.jpg'
 
 export const GlobalStyle = createGlobalStyle`
   html {
